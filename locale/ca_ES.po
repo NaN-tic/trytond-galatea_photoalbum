@@ -1,0 +1,372 @@
+# 
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:galatea.photoalbum.photo:"
+msgid "\"%(file_name)s\" file mime is not an image (jpg, png or gif)"
+msgstr "El fitxer \"%(file_name)s\" no es una imatge (jpg, png or gif)"
+
+msgctxt "error:galatea.photoalbum.photo:"
+msgid "\"%(file_name)s\" size is larger than \"%(size)s\"MB"
+msgstr "El fitxer \"%(file_name)s\" es mes gran que \"%(size)s\"MB"
+
+msgctxt "error:galatea.photoalbum.photo:"
+msgid "Not know file mime \"%(file_name)s\""
+msgstr "No es coneix el tipus del fitxer \"%(file_name)s\""
+
+msgctxt "error:galatea.photoalbum.photo:"
+msgid ""
+"You can not delete photos because you will get error 404 NOT Found. Dissable"
+" active field."
+msgstr ""
+"No pot eliminar fotografies perque obtindria una error 404 NOT Found. "
+"Desactiva'l."
+
+msgctxt "field:galatea.photoalbum.comment,active:"
+msgid "Active"
+msgstr "Actiu"
+
+msgctxt "field:galatea.photoalbum.comment,comment_create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:galatea.photoalbum.comment,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:galatea.photoalbum.comment,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.comment,description:"
+msgid "Description"
+msgstr "Descripció"
+
+msgctxt "field:galatea.photoalbum.comment,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:galatea.photoalbum.comment,photo:"
+msgid "Photo"
+msgstr "Fotografia"
+
+msgctxt "field:galatea.photoalbum.comment,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:galatea.photoalbum.comment,user:"
+msgid "User"
+msgstr "Usuari"
+
+msgctxt "field:galatea.photoalbum.comment,write_date:"
+msgid "Write Date"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.comment,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "field:galatea.photoalbum.configuration,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:galatea.photoalbum.configuration,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.configuration,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:galatea.photoalbum.configuration,max_size:"
+msgid "Max Size"
+msgstr "Tamany máxim"
+
+msgctxt "field:galatea.photoalbum.configuration,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:galatea.photoalbum.configuration,write_date:"
+msgid "Write Date"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.configuration,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "field:galatea.photoalbum.photo,active:"
+msgid "Active"
+msgstr "Actiu"
+
+msgctxt "field:galatea.photoalbum.photo,comment:"
+msgid "Comment"
+msgstr "Comentari"
+
+msgctxt "field:galatea.photoalbum.photo,comments:"
+msgid "Comments"
+msgstr "Comentaris"
+
+msgctxt "field:galatea.photoalbum.photo,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:galatea.photoalbum.photo,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.photo,description:"
+msgid "Description"
+msgstr "Descripció"
+
+msgctxt "field:galatea.photoalbum.photo,file_name:"
+msgid "File Name"
+msgstr "Nom fitxer"
+
+msgctxt "field:galatea.photoalbum.photo,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:galatea.photoalbum.photo,metadescription:"
+msgid "Meta Description"
+msgstr "Meta Description"
+
+msgctxt "field:galatea.photoalbum.photo,metakeywords:"
+msgid "Meta Keywords"
+msgstr "Meta Keywords"
+
+msgctxt "field:galatea.photoalbum.photo,metatitle:"
+msgid "Meta Title"
+msgstr "Meta Title"
+
+msgctxt "field:galatea.photoalbum.photo,photo:"
+msgid "Photo"
+msgstr "Fotografia"
+
+msgctxt "field:galatea.photoalbum.photo,photo_create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:galatea.photoalbum.photo,photo_write_date:"
+msgid "Write Date"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.photo,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:galatea.photoalbum.photo,user:"
+msgid "User"
+msgstr "Usuari"
+
+msgctxt "field:galatea.photoalbum.photo,websites:"
+msgid "Websites"
+msgstr "Llocs web"
+
+msgctxt "field:galatea.photoalbum.photo,write_date:"
+msgid "Write Date"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.photo,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,create_date:"
+msgid "Create Date"
+msgstr "Data creació"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,create_uid:"
+msgid "Create User"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,photo:"
+msgid "Photo"
+msgstr "Fotografia"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,rec_name:"
+msgid "Name"
+msgstr "Nom"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,website:"
+msgid "Website"
+msgstr "Lloc web"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,write_date:"
+msgid "Write Date"
+msgstr "Usuari creació"
+
+msgctxt "field:galatea.photoalbum.photo-galatea.website,write_uid:"
+msgid "Write User"
+msgstr "Usuari modificació"
+
+msgctxt "field:galatea.website,photoalbum_anonymous:"
+msgid "Photo Album Anonymous"
+msgstr "Àlbuns fotografia anònims"
+
+msgctxt "field:galatea.website,photoalbum_anonymous_user:"
+msgid "Photo Album Anonymous User"
+msgstr "Àlbuns fotografia usuari anònim"
+
+msgctxt "field:galatea.website,photoalbum_comment:"
+msgid "Photo Album Comments"
+msgstr "Àlbuns fotografia comentaris"
+
+msgctxt "help:galatea.photoalbum.comment,active:"
+msgid "Dissable to not show content photo."
+msgstr "Desactivar per no mostrar la fotografia."
+
+msgctxt "help:galatea.photoalbum.comment,description:"
+msgid ""
+"You could write wiki markup to create html content. Formats text following "
+"the MediaWiki (http://meta.wikimedia.org/wiki/Help:Editing) syntax."
+msgstr ""
+"Pot escriure amb els tags de wiki per formatejar contingut HTML. Pot "
+"consultar la xuleta a MediaWiki "
+"(http://meta.wikimedia.org/wiki/Help:Editing)."
+
+msgctxt "help:galatea.photoalbum.configuration,max_size:"
+msgid "Maxim Image Size (bites)"
+msgstr "Tamany máxim (bites)"
+
+msgctxt "help:galatea.photoalbum.photo,active:"
+msgid "Dissable to not show content photo."
+msgstr "Desactivar per no mostrar la fotografia."
+
+msgctxt "help:galatea.photoalbum.photo,comment:"
+msgid "Active comments."
+msgstr "Activar comentaris."
+
+msgctxt "help:galatea.photoalbum.photo,description:"
+msgid ""
+"You could write wiki markup to create html content. Formats text following "
+"the MediaWiki (http://meta.wikimedia.org/wiki/Help:Editing) syntax."
+msgstr ""
+"Pot escriure amb els tags de wiki per formatejar contingut HTML. Pot "
+"consultar la xuleta a MediaWiki "
+"(http://meta.wikimedia.org/wiki/Help:Editing)."
+
+msgctxt "help:galatea.photoalbum.photo,metadescription:"
+msgid ""
+"Almost all search engines recommend it to be shorter than 155 characters of "
+"plain text"
+msgstr ""
+"La majoria dels cercadors recomanen un text de 155 caràcters de text pla."
+
+msgctxt "help:galatea.photoalbum.photo,metakeywords:"
+msgid "Separated by comma"
+msgstr "Separat amb coma."
+
+msgctxt "help:galatea.photoalbum.photo,websites:"
+msgid "Photo will be available in those websites"
+msgstr "La fotografia estarà disponible en aquests llocs web."
+
+msgctxt "help:galatea.website,photoalbum_anonymous:"
+msgid "Active user anonymous to publish comments."
+msgstr "Activar usuaris anònims per publicar comentaris."
+
+msgctxt "help:galatea.website,photoalbum_comment:"
+msgid "Active Photo Album comments."
+msgstr "Activar comentaris en els àlbums de fotografia."
+
+msgctxt "model:galatea.photoalbum.comment,name:"
+msgid "Galatea Photo Comment"
+msgstr "Galatea Comentari Fotografia"
+
+msgctxt "model:galatea.photoalbum.configuration,name:"
+msgid "Galatea Photo Album Configuration"
+msgstr "Galatea Àlbum Fotografia Configuració"
+
+msgctxt "model:galatea.photoalbum.photo,name:"
+msgid "Galatea Photo"
+msgstr "Galatea Fotografia"
+
+msgctxt "model:galatea.photoalbum.photo-galatea.website,name:"
+msgid "Galatea Photo - Website"
+msgstr "Galatea Fotografia - Lloc web"
+
+msgctxt "model:ir.action,name:act_galatea_photoalbum_configuration_form"
+msgid "Configuration"
+msgstr "Configuració"
+
+msgctxt "model:ir.action,name:act_photoalbum_comment_form"
+msgid "Comments"
+msgstr "Comentaris"
+
+msgctxt "model:ir.action,name:act_photoalbum_comment_form2"
+msgid "Comments"
+msgstr "Comentaris"
+
+msgctxt "model:ir.action,name:act_photoalbum_photo_form"
+msgid "Photos"
+msgstr "Fotografies"
+
+msgctxt "model:ir.ui.menu,name:menu_configuration"
+msgid "Configuration"
+msgstr "Configuració"
+
+msgctxt "model:ir.ui.menu,name:menu_galatea_photoalbum"
+msgid "Photo Albums"
+msgstr "Àlbuns fotografia"
+
+msgctxt "model:ir.ui.menu,name:menu_galatea_photoalbum_configuration"
+msgid "Photo Album Configuration"
+msgstr "Configuració àlbuns fotografia"
+
+msgctxt "model:ir.ui.menu,name:menu_photo_form"
+msgid "Photos"
+msgstr "Fotografies"
+
+msgctxt "model:ir.ui.menu,name:menu_photoalbum_comment_form"
+msgid "Comments"
+msgstr "Comentaris"
+
+msgctxt "model:res.group,name:group_galatea_photoalbum"
+msgid "Galatea Photo Album"
+msgstr "Galatea Àlbum Fotografia"
+
+msgctxt "model:res.group,name:group_galatea_photoalbum_admin"
+msgid "Galatea Photo Album Admin"
+msgstr "Galatea Àlbum Fotografia Administrador"
+
+msgctxt "view:galatea.photoalbum.comment:"
+msgid "Comment"
+msgstr "Comentari"
+
+msgctxt "view:galatea.photoalbum.comment:"
+msgid "Comments"
+msgstr "Comentaris"
+
+msgctxt "view:galatea.photoalbum.comment:"
+msgid "Description"
+msgstr "Descripció"
+
+msgctxt "view:galatea.photoalbum.configuration:"
+msgid "Photo Album Configuration"
+msgstr "Configuració àlbuns fotografia"
+
+msgctxt "view:galatea.photoalbum.photo:"
+msgid "Extra"
+msgstr "Extra"
+
+msgctxt "view:galatea.photoalbum.photo:"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "view:galatea.photoalbum.photo:"
+msgid "Photo"
+msgstr "Fotografia"
+
+msgctxt "view:galatea.photoalbum.photo:"
+msgid "Photos"
+msgstr "Fotografies"
+
+msgctxt "view:galatea.photoalbum.photo:"
+msgid "SEO"
+msgstr "SEO"
+
+msgctxt "view:galatea.photoalbum.photo:"
+msgid "Websites"
+msgstr "Llocs web"

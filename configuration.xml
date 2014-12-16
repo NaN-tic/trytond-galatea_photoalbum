@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!-- This file is part galatea_photoalbum module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <menuitem name="Configuration" parent="menu_galatea_photoalbum"
+            id="menu_configuration" sequence="0" icon="tryton-preferences"/>
+        <record model="ir.ui.menu-res.group"
+            id="menu_configuration_group_galatea_photoalbum_admin">
+            <field name="menu" ref="menu_configuration"/>
+            <field name="group" ref="group_galatea_photoalbum_admin"/>
+        </record>
+
+        <record model="ir.ui.view" id="galatea_photoalbum_configuration_view_form">
+            <field name="model">galatea.photoalbum.configuration</field>
+            <field name="type">form</field>
+            <field name="name">configuration_form</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_galatea_photoalbum_configuration_form">
+            <field name="name">Configuration</field>
+            <field name="res_model">galatea.photoalbum.configuration</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_galatea_photoalbum_configuration_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="galatea_photoalbum_configuration_view_form"/>
+            <field name="act_window" ref="act_galatea_photoalbum_configuration_form"/>
+        </record>
+
+        <menuitem
+                id="menu_galatea_photoalbum_configuration"
+                icon="tryton-list"
+                name="Photo Album Configuration"
+                parent="menu_configuration"
+                action="act_galatea_photoalbum_configuration_form"/>
+    </data>
+</tryton>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tryton>
+    <data>
+        <record model="res.group" id="group_galatea_photoalbum_admin">
+            <field name="name">Galatea Photo Album Admin</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_galatea_photoalbum_admin">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_galatea_photoalbum_admin"/>
+        </record>
+
+        <record model="res.group" id="group_galatea_photoalbum">
+            <field name="name">Galatea Photo Album</field>
+        </record>
+        <record model="res.user-res.group" id="user_admin_group_galatea_photoalbum">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_galatea_photoalbum"/>
+        </record>
+
+        <menuitem id="menu_galatea_photoalbum" parent="galatea.menu_galatea" name="Photo Albums"/>
+        <record model="ir.ui.menu-res.group" id="menu_group_galatea_photoalbum">
+            <field name="menu" ref="menu_galatea_photoalbum"/>
+            <field name="group" ref="group_galatea_photoalbum"/>
+        </record>
+
+        <!-- galatea.photoalbum -->
+        <record model="ir.ui.view" id="photo_view_form">
+            <field name="model">galatea.photoalbum.photo</field>
+            <field name="type">form</field>
+            <field name="name">photo_form</field>
+        </record>
+        <record model="ir.ui.view" id="photo_view_tree">
+            <field name="model">galatea.photoalbum.photo</field>
+            <field name="type">tree</field>
+            <field name="name">photo_tree</field>
+        </record>
+
+        <!-- Actions / Menu -->
+        <record model="ir.action.act_window" id="act_photoalbum_photo_form">
+            <field name="name">Photos</field>
+            <field name="res_model">galatea.photoalbum.photo</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_photoalbum_photo_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="photo_view_tree"/>
+            <field name="act_window" ref="act_photoalbum_photo_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_photoalbum_photo_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="photo_view_form"/>
+            <field name="act_window" ref="act_photoalbum_photo_form"/>
+        </record>
+        <menuitem parent="menu_galatea_photoalbum" action="act_photoalbum_photo_form"
+            id="menu_photo_form"/>
+
+        <!-- Action Photo to Comments -->
+        <record model="ir.action.act_window" id="act_photoalbum_comment_form2">
+            <field name="name">Comments</field>
+            <field name="res_model">galatea.photoalbum.comment</field>
+            <field name="domain">[("photo", 'in', Eval('active_ids'))]</field>
+        </record>
+        <record model="ir.action.keyword" id="act_open_photoalbum_comment_keyword1">
+            <field name="keyword">form_relate</field>
+            <field name="model">galatea.photoalbum.photo,-1</field>
+            <field name="action" ref="act_photoalbum_comment_form2"/>
+        </record>
+
+        <!-- galatea.photoalbum.comment -->
+        <record model="ir.ui.view" id="photoalbum_comment_view_form">
+            <field name="model">galatea.photoalbum.comment</field>
+            <field name="type">form</field>
+            <field name="name">comment_form</field>
+        </record>
+        <record model="ir.ui.view" id="photoalbum_comment_view_tree">
+            <field name="model">galatea.photoalbum.comment</field>
+            <field name="type">tree</field>
+            <field name="name">comment_tree</field>
+        </record>
+
+        <!-- Actions / Menu -->
+        <record model="ir.action.act_window" id="act_photoalbum_comment_form">
+            <field name="name">Comments</field>
+            <field name="res_model">galatea.photoalbum.comment</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_photoalbum_comment_form_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="photoalbum_comment_view_tree"/>
+            <field name="act_window" ref="act_photoalbum_comment_form"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_photoalbum_comment_form_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="photoalbum_comment_view_form"/>
+            <field name="act_window" ref="act_photoalbum_comment_form"/>
+        </record>
+        <menuitem parent="menu_galatea_photoalbum" action="act_photoalbum_comment_form"
+            id="menu_photoalbum_comment_form"/>
+
+        <!-- Access -->
+        <record model="ir.model.access" id="access_group_galatea_photoalbum_photo">
+            <field name="model" search="[('model', '=', 'galatea.photoalbum.photo')]"/>
+            <field name="group" ref="group_galatea_photoalbum"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.model.access" id="access_galatea_photoalbum_photo">
+            <field name="model" search="[('model', '=', 'galatea.photoalbum.photo')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_group_galatea_photoalbum_comment">
+            <field name="model" search="[('model', '=', 'galatea.photoalbum.comment')]"/>
+            <field name="group" ref="group_galatea_photoalbum"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+        <record model="ir.model.access" id="access_galatea_photoalbum_comment">
+            <field name="model" search="[('model', '=', 'galatea.photoalbum.comment')]"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+    </data>
+</tryton>

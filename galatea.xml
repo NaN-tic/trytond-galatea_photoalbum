@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!-- This file is part galatea_photoalbum module for Tryton.
+The COPYRIGHT file at the top level of this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+        <!-- Website -->
+        <record model="ir.ui.view" id="website_view_form">
+            <field name="model">galatea.website</field>
+            <field name="inherit" ref="galatea.website_view_form"/>
+            <field name="name">website_form</field> 
+        </record>
+    </data>
+</tryton>

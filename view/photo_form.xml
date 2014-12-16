@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- This file is part galatea_photoalbum of Tryton. The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form string="Photo">
+    <label name="user"/>
+    <field name="user"/>
+    <label name="active"/>
+    <field name="active"/>
+    <notebook colspan="4">
+        <page string="Photo" id="photo">
+            <label name="photo"/>
+            <field name="photo"/>
+            <label name="file_name" invisible="1"/>
+            <field name="file_name" invisible="1"/>
+            <field name="description" colspan="4"/>
+        </page>
+        <page string="SEO" id="seo">
+            <label name="metadescription"/>
+            <field name="metadescription"/><newline/>
+            <label name="metakeywords"/>
+            <field name="metakeywords"/><newline/>
+            <label name="metatitle"/>
+            <field name="metatitle"/><newline/>
+        </page>
+        <page string="Info" id="info">
+            <label name="photo_create_date"/>
+            <field name="photo_create_date"/>
+            <label name="photo_write_date"/>
+            <field name="photo_write_date"/>
+            <label name="user"/>
+            <field name="user"/>
+        </page>
+        <page string="Extra" id="extra">
+            <label name="comment"/>
+            <field name="comment"/>
+        </page>
+        <page string="Websites" id="websites">
+            <field name="websites" colspan="6"/>
+        </page>
+    </notebook>
+</form>
