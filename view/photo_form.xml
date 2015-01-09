@@ -10,7 +10,6 @@ this repository contains the full copyright notices and license terms. -->
         <page string="Photo" id="photo">
             <label name="photo"/>
             <field name="photo"/>
-            <label name="file_name" invisible="1"/>
             <field name="file_name" invisible="1"/>
             <field name="description" colspan="4"/>
         </page>
