@@ -158,6 +158,10 @@ msgctxt "field:galatea.photoalbum.photo,user:"
 msgid "User"
 msgstr "Usuari"
 
+msgctxt "field:galatea.photoalbum.photo,visibility:"
+msgid "Visibility"
+msgstr "Visibilidad"
+
 msgctxt "field:galatea.photoalbum.photo,websites:"
 msgid "Websites"
 msgstr "Llocs web"
@@ -330,6 +334,18 @@ msgstr "Galatea Àlbum Fotografia"
 msgctxt "model:res.group,name:group_galatea_photoalbum_admin"
 msgid "Galatea Photo Album Admin"
 msgstr "Galatea Àlbum Fotografia Administrador"
+
+msgctxt "selection:galatea.photoalbum.photo,visibility:"
+msgid "Manager"
+msgstr "Gestor"
+
+msgctxt "selection:galatea.photoalbum.photo,visibility:"
+msgid "Public"
+msgstr "Públic"
+
+msgctxt "selection:galatea.photoalbum.photo,visibility:"
+msgid "Register"
+msgstr "Registrat"
 
 msgctxt "view:galatea.photoalbum.comment:"
 msgid "Comment"
