@@ -4,6 +4,7 @@ this repository contains the full copyright notices and license terms. -->
 <tree string="Photos">
     <field name="file_name"/>
     <field name="user"/>
+    <field name="visibility"/>
     <field name="websites" tree_invisible="1"/>
     <field name="active" tree_invisible="1"/>
 </tree>

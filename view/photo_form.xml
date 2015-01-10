@@ -30,6 +30,8 @@ this repository contains the full copyright notices and license terms. -->
             <field name="user"/>
         </page>
         <page string="Extra" id="extra">
+            <label name="visibility"/>
+            <field name="visibility"/>
             <label name="comment"/>
             <field name="comment"/>
         </page>

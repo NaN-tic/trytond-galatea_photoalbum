@@ -35,6 +35,11 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
     metatitle = fields.Char('Meta Title',  translate=True)
     active = fields.Boolean('Active',
         help='Dissable to not show content photo.')
+    visibility = fields.Selection([
+            ('public','Public'),
+            ('register','Register'),
+            ('manager','Manager'),
+            ], 'Visibility', required=True)
     websites = fields.Many2Many('galatea.photoalbum.photo-galatea.website', 
         'photo', 'website', 'Websites',
         help='Photo will be available in those websites')
@@ -44,6 +49,10 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
     @staticmethod
     def default_active():
         return True
+
+    @staticmethod
+    def default_visibility():
+        return 'public'
 
     @staticmethod
     def default_websites():
