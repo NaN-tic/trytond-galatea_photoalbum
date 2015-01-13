@@ -10,5 +10,9 @@ copyright notices and license types. -->
         <field name="photoalbum_anonymous"/>
         <label name="photoalbum_anonymous_user"/>
         <field name="photoalbum_anonymous_user"/>
+        <label name="photoalbum_new"/>
+        <field name="photoalbum_new"/>
+        <label name="photoalbum_new_anonymous"/>
+        <field name="photoalbum_new_anonymous"/>
     </xpath>
 </data>

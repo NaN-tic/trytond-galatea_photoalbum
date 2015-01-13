@@ -19,3 +19,7 @@ class GalateaWebSite:
         states={
             'required': Eval('photoalbum_anonymous', True),
         })
+    photoalbum_new = fields.Boolean('Photo Album New',
+            help='Available users to publish photos.')
+    photoalbum_new_anonymous = fields.Boolean('Photo Album Anonymous',
+            help='Available user anonymous to publish photos.')
