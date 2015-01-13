@@ -26,8 +26,6 @@ this repository contains the full copyright notices and license terms. -->
             <field name="photo_create_date"/>
             <label name="photo_write_date"/>
             <field name="photo_write_date"/>
-            <label name="user"/>
-            <field name="user"/>
         </page>
         <page string="Extra" id="extra">
             <label name="visibility"/>
