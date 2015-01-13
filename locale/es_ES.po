@@ -226,6 +226,14 @@ msgctxt "field:galatea.website,photoalbum_comment:"
 msgid "Photo Album Comments"
 msgstr "Álbumes fotografía comentarios"
 
+msgctxt "field:galatea.website,photoalbum_new:"
+msgid "Photo Album New"
+msgstr "Álbumes fotografía nuevo"
+
+msgctxt "field:galatea.website,photoalbum_new_anonymous:"
+msgid "Photo Album Anonymous"
+msgstr "Álbumes fotografía anónimos"
+
 msgctxt "help:galatea.photoalbum.comment,active:"
 msgid "Dissable to not show content photo."
 msgstr "Desactivar para no mostrar la fotografía."
@@ -283,6 +291,14 @@ msgstr "Activar usuarios anónimos en publicar comentarios."
 msgctxt "help:galatea.website,photoalbum_comment:"
 msgid "Active Photo Album comments."
 msgstr "Activar comentarios en los álbunes de fotografía."
+
+msgctxt "help:galatea.website,photoalbum_new:"
+msgid "Available users to publish photos."
+msgstr "Los usuarios pueden publicar fotografias."
+
+msgctxt "help:galatea.website,photoalbum_new_anonymous:"
+msgid "Available user anonymous to publish photos."
+msgstr "Los usuarios anónimos pueden publicar fotografias."
 
 msgctxt "model:galatea.photoalbum.comment,name:"
 msgid "Galatea Photo Comment"
