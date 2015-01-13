@@ -20,6 +20,7 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
     _rec_name = 'file_name'
     photo = fields.Function(fields.Binary('Photo', filename='file_name'), 'get_image',
         setter='set_image')
+    photo_path = fields.Function(fields.Char('Photo Path'), 'get_photopath')
     file_name = fields.Char('File Name', required=True)
     photo_create_date = fields.DateTime('Create Date', readonly=True)
     photo_write_date = fields.DateTime('Write Date', readonly=True)
@@ -44,7 +45,9 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
         'photo', 'website', 'Websites',
         help='Photo will be available in those websites')
     comment = fields.Boolean('Comment', help='Active comments.')
-    comments = fields.One2Many('galatea.photoalbum.comment', 'photoalbum', 'Comments')
+    comments = fields.One2Many('galatea.photoalbum.comment', 'photo', 'Comments')
+    total_comments = fields.Function(fields.Integer("Total Comments"),
+        'get_totalcomments')
 
     @staticmethod
     def default_active():
@@ -127,6 +130,8 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
     def get_image(self, name):
         db_name = Transaction().cursor.dbname
         filename = self.file_name
+        if not filename:
+            return None
         filename = os.path.join(config.get('database', 'path'), db_name,
             'photoalbum', filename[0:2], filename[2:4], self.file_name)
 
@@ -137,6 +142,15 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
         except IOError:
             pass
         return value
+
+    def get_photopath(self, name):
+        filename = self.file_name
+        if not filename:
+            return None
+        return '%s/%s/%s' % (filename[:2], filename[2:4], filename)
+
+    def get_totalcomments(self, name):
+        return len(self.comments)
 
     @classmethod
     def set_image(cls, photos, name, value):

@@ -14,4 +14,4 @@ class GalateaPhotoAlbumConfiguration(ModelSingleton, ModelSQL, ModelView):
 
     @staticmethod
     def default_max_size():
-        return 10000
+        return 1000000
