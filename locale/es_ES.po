@@ -146,6 +146,10 @@ msgctxt "field:galatea.photoalbum.photo,photo_create_date:"
 msgid "Create Date"
 msgstr "Fecha creación"
 
+msgctxt "field:galatea.photoalbum.photo,photo_path:"
+msgid "Photo Path"
+msgstr "Fotografía ruta"
+
 msgctxt "field:galatea.photoalbum.photo,photo_write_date:"
 msgid "Write Date"
 msgstr "Fecha modificación"
@@ -153,6 +157,10 @@ msgstr "Fecha modificación"
 msgctxt "field:galatea.photoalbum.photo,rec_name:"
 msgid "Name"
 msgstr "Nombre"
+
+msgctxt "field:galatea.photoalbum.photo,total_comments:"
+msgid "Total Comments"
+msgstr "Total comentarios"
 
 msgctxt "field:galatea.photoalbum.photo,user:"
 msgid "User"
