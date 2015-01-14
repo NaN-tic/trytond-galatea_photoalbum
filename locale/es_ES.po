@@ -15,6 +15,10 @@ msgid "Not know file mime \"%(file_name)s\""
 msgstr "No se conoce el tipo de fichero \"%(file_name)s\""
 
 msgctxt "error:galatea.photoalbum.photo:"
+msgid "You can not copy photos. Create new record."
+msgstr "No puede clonar fotografias. Cree un nuevo registro."
+
+msgctxt "error:galatea.photoalbum.photo:"
 msgid ""
 "You can not delete photos because you will get error 404 NOT Found. Dissable"
 " active field."
