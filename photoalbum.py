@@ -195,7 +195,7 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
             filename = os.path.join(directory, digest)
 
             if not os.path.isdir(directory):
-                os.makedirs(directory, 0770)
+                os.makedirs(directory, 0774)
             os.umask(0022)
             with open(filename, 'wb') as file_p:
                 file_p.write(value)
