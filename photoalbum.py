@@ -92,6 +92,7 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
         super(GalateaPhotoAlbumPhoto, cls).__setup__()
         cls._order.insert(0, ('photo_create_date', 'DESC'))
         cls._error_messages.update({
+            'copy_photos': ('You can not copy photos. Create new record.'),
             'delete_photos': ('You can not delete photos because you will get ' \
                 'error 404 NOT Found. Dissable active field.'),
             'not_file_mime': ('Not know file mime "%(file_name)s"'),
@@ -121,6 +122,10 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
             values['photo_write_date'] = now
             args.extend((photos, values))
         return super(GalateaPhotoAlbumPhoto, cls).write(*args)
+
+    @classmethod
+    def copy(cls, teams, default=None):
+        cls.raise_user_error('copy_teams')
 
     @classmethod
     def delete(cls, photos):
