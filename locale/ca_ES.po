@@ -216,7 +216,7 @@ msgstr "Usuari modificació"
 
 msgctxt "field:galatea.website,photoalbum_anonymous:"
 msgid "Photo Album Anonymous"
-msgstr "Àlbuns fotografia anònims"
+msgstr "Àlbuns fotografia anònim"
 
 msgctxt "field:galatea.website,photoalbum_anonymous_user:"
 msgid "Photo Album Anonymous User"
@@ -224,7 +224,7 @@ msgstr "Àlbuns fotografia usuari anònim"
 
 msgctxt "field:galatea.website,photoalbum_comment:"
 msgid "Photo Album Comments"
-msgstr "Àlbuns fotografia comentaris"
+msgstr "Comentaris àlbums fotografia"
 
 msgctxt "field:galatea.website,photoalbum_new:"
 msgid "Photo Album New"
@@ -232,7 +232,7 @@ msgstr "Àlbuns fotografia nou"
 
 msgctxt "field:galatea.website,photoalbum_new_anonymous:"
 msgid "Photo Album Anonymous"
-msgstr "Àlbuns fotografia anònims"
+msgstr "Àlbuns fotografia anònim"
 
 msgctxt "help:galatea.photoalbum.comment,active:"
 msgid "Dissable to not show content photo."
@@ -410,3 +410,7 @@ msgstr "SEO"
 msgctxt "view:galatea.photoalbum.photo:"
 msgid "Websites"
 msgstr "Llocs web"
+
+msgctxt "view:galatea.website:"
+msgid "Photo Album"
+msgstr "Àlbum fotografia"

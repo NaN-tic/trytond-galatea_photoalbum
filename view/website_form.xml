@@ -3,16 +3,18 @@
 The COPYRIGHT file at the top level of this repository contains the full
 copyright notices and license types. -->
 <data>
-    <xpath expr="/form/notebook/page[@id=&quot;configuration&quot;]" position="inside">
-        <label name="photoalbum_comment"/>
-        <field name="photoalbum_comment"/>
-        <label name="photoalbum_anonymous"/>
-        <field name="photoalbum_anonymous"/>
-        <label name="photoalbum_anonymous_user"/>
-        <field name="photoalbum_anonymous_user"/>
-        <label name="photoalbum_new"/>
-        <field name="photoalbum_new"/>
-        <label name="photoalbum_new_anonymous"/>
-        <field name="photoalbum_new_anonymous"/>
+    <xpath expr="/form/notebook/page[@id=&quot;configuration&quot;]" position="after">
+        <page id="photoalbum" string="Photo Album">
+            <label name="photoalbum_comment"/>
+            <field name="photoalbum_comment"/>
+            <label name="photoalbum_anonymous"/>
+            <field name="photoalbum_anonymous"/>
+            <label name="photoalbum_anonymous_user"/>
+            <field name="photoalbum_anonymous_user"/>
+            <label name="photoalbum_new"/>
+            <field name="photoalbum_new"/>
+            <label name="photoalbum_new_anonymous"/>
+            <field name="photoalbum_new_anonymous"/>
+        </page>
     </xpath>
 </data>
