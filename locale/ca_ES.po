@@ -1,4 +1,4 @@
-# 
+#
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
@@ -386,6 +386,10 @@ msgstr "Comentaris"
 msgctxt "view:galatea.photoalbum.comment:"
 msgid "Description"
 msgstr "Descripció"
+
+msgctxt "view:galatea.photoalbum.comment:"
+msgid "Time"
+msgstr "Hora"
 
 msgctxt "view:galatea.photoalbum.configuration:"
 msgid "Photo Album Configuration"
