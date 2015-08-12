@@ -87,6 +87,10 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
         if not os.path.isdir(directory):
             os.makedirs(directory, 0770)
 
+    @staticmethod
+    def default_photo_create_date():
+        return datetime.now()
+
     @classmethod
     def __setup__(cls):
         super(GalateaPhotoAlbumPhoto, cls).__setup__()
@@ -101,15 +105,6 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
             'image_size': ('"%(file_name)s" size is larger than "%(size)s"MB'),
             })
         cls._create_photoalbum_dir()
-
-    @classmethod
-    def create(cls, vlist):
-        now = datetime.now()
-        vlist = [x.copy() for x in vlist]
-        for vals in vlist:
-            vals['photo_create_date'] = now
-        photos = super(GalateaPhotoAlbumPhoto, cls).create(vlist)
-        return photos
 
     @classmethod
     def write(cls, *args):
@@ -225,8 +220,7 @@ class GalateaPhotoAlbumComment(ModelSQL, ModelView):
         'the MediaWiki (http://meta.wikimedia.org/wiki/Help:Editing) syntax.')
     active = fields.Boolean('Active',
         help='Dissable to not show content photo.')
-    comment_create_date = fields.Function(fields.Char('Create Date'),
-        'get_comment_create_date')
+    comment_create_date = fields.DateTime('Create Date', readonly=True)
 
     @classmethod
     def __setup__(cls):
@@ -249,11 +243,11 @@ class GalateaPhotoAlbumComment(ModelSQL, ModelView):
             return website.photoalbum_anonymous_user.id
         return None
 
+    @staticmethod
+    def default_comment_create_date():
+        return datetime.now()
+
     @classmethod
-    def get_comment_create_date(cls, records, name):
-        'Created domment date'
-        res = {}
-        DATE_FORMAT = '%s %s' % (Transaction().context['locale']['date'], '%H:%M:%S')
-        for record in records:
-            res[record.id] = record.create_date.strftime(DATE_FORMAT) or ''
-        return res
+    def copy(cls, comments, default=None):
+        default['comment_create_date'] = None
+        return super(GalateaPhotoAlbumComment, cls).copy(comments, default=default)
