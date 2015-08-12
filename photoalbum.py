@@ -249,5 +249,5 @@ class GalateaPhotoAlbumComment(ModelSQL, ModelView):
 
     @classmethod
     def copy(cls, comments, default=None):
-        default['comment_create_date'] = None
+        default['comment_create_date'] = datetime.now()
         return super(GalateaPhotoAlbumComment, cls).copy(comments, default=default)
