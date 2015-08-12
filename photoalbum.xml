@@ -57,7 +57,9 @@
         <record model="ir.action.act_window" id="act_photoalbum_comment_form2">
             <field name="name">Comments</field>
             <field name="res_model">galatea.photoalbum.comment</field>
-            <field name="domain">[("photo", 'in', Eval('active_ids'))]</field>
+            <field name="domain"
+                eval="[('photo', 'in', Eval('active_ids'))]"
+                pyson="1"/>
         </record>
         <record model="ir.action.keyword" id="act_open_photoalbum_comment_keyword1">
             <field name="keyword">form_relate</field>
