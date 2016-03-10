@@ -79,7 +79,7 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
 
     @staticmethod
     def _create_photoalbum_dir():
-        db_name = Transaction().cursor.dbname
+        db_name = Transaction().database.name
         directory = os.path.join(config.get('database', 'path'), db_name)
         if not os.path.isdir(directory):
             os.makedirs(directory, 0770)
@@ -127,7 +127,7 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
         cls.raise_user_error('delete_photos')
 
     def get_image(self, name):
-        db_name = Transaction().cursor.dbname
+        db_name = Transaction().database.name
         filename = self.file_name
         if not filename:
             return None
@@ -160,7 +160,7 @@ class GalateaPhotoAlbumPhoto(ModelSQL, ModelView):
         config_photoalbum = ConfigPhotoAlbum(1)
         size = config_photoalbum.max_size or 1000000
 
-        db_name = Transaction().cursor.dbname
+        db_name = Transaction().database.name
         photodir = os.path.join(
             config.get('database', 'path'), db_name, 'photoalbum')
 
