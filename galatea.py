@@ -6,10 +6,10 @@ from trytond.model import fields
 from trytond.pyson import Eval
 
 __all__ = ['GalateaWebSite']
-__metaclass__ = PoolMeta
 
 
 class GalateaWebSite:
+    __metaclass__ = PoolMeta
     __name__ = "galatea.website"
     photoalbum_comment = fields.Boolean('Photo Album Comments',
         help='Active Photo Album comments.')
